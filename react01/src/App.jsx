@@ -10,7 +10,7 @@ function App() {
     <UserContextProvider>
     <div className='w-full h-lvh bg-slate-900 '>
       <Input/>
-      <Search/>
+      {/* <Search/> */}
       <Table/>
     </div>
     </UserContextProvider>

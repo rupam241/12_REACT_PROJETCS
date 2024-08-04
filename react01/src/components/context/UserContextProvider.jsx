@@ -6,13 +6,13 @@ const UserContextProvider=({children})=> {
   const[gender,setGender]=useState(null)
   const[age,setAge]=useState(null);
   const [data, setData] = useState([]);
-  const[searchData,setSearchData]=useState(null)
-  const [getData,setGetData]=useState(null)
+  
+
   // useEffect(()=>{
   //   console.log(age,name,gender)
   // })
   return (
-   <UserContext.Provider value={{name,gender,age,setAge,setGender,setName,data,setData,searchData,setSearchData,getData,setGetData}}>
+   <UserContext.Provider value={{ name,gender,age,setAge,setGender,setName,data,setData}}>
    {children}
    </UserContext.Provider>
   )

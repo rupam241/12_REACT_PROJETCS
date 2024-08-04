@@ -6,7 +6,7 @@ function Input() {
     const inputAge = useRef();
     const inputGender = useRef();
 
-    const { setName, setGender, setAge, setData} = useContext(UserContext);
+    const { setName, setGender, setAge} = useContext(UserContext);
 
     const submitData = () => {
         setName(inputName.current.value);
